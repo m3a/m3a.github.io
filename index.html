@@ -7,37 +7,220 @@
   <link rel="stylesheet" href="bootstrap.min.css">
   <script src="jquery.min.js"></script>
   <script src="bootstrap.min.js"></script>
+  <style>
+	.btn{
+	  outline:none !important;
+	}
+  </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="jumbotron">
-      <h1>helloworld</h1>
-      <p>A project to gain exprience!</p>
+<div class="container">
+  <div class="jumbotron">
+    <h1>helloworld</h1>
+	<p>A project to gain exprience!</p>
+  </div>
+  <div class="btn-group btn-group-justified" style="font:1em B Helal;">
+	<a href="#" class="btn btn-danger">جستجو <span class="glyphicon glyphicon-search"></span></a>
+	<a href="#" class="btn btn-warning">آیکن <span class="label label-danger">جدید</span> <span class="glyphicon glyphicon-tree-conifer"></span></a>
+	<a href="#" class="btn btn-info">فونت <span class="glyphicon glyphicon-font"></span></a>
+	<div class="btn-group">
+      <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span> فایل لایه باز <span class="glyphicon glyphicon-file"></span></a>
+	  <ul class="dropdown-menu" role="menu">
+	    <li><a href="#">اسکریپت <span class="glyphicon glyphicon-list-alt"></span></a></li>
+	    <li><a href="#">منو لایه باز <span class="glyphicon glyphicon-th-list"></span></a></li>
+	    <li><a href="#">فارسی نویس <span class="badge">فا</span></a></li>
+	    <li><a href="#">وکتور طراحی وب <span class="glyphicon glyphicon-leaf"></span></a></li>
+	    <li><a href="#">آیکن های کاربردی <span class="glyphicon glyphicon-flag"></span></a></li>
+	  </ul>
+	</div>
+	<a href="#" class="btn btn-primary">ابزار گرافیک <span class="glyphicon glyphicon-th-large"></span></a>
+	<a href="#" class="btn btn-default">صفحه نخست <span class="glyphicon glyphicon-home"></span></a>
+  </div>
+  <div class="page-header">
+	<h2>helloworld <small>A project to gain exprience!</small></h2>
+  </div>
+  <div class="alert alert-danger">
+    <p>Connection to server is refused!</p>
+  </div>
+  <div class="alert alert-success fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <p>Log in was successful!</p>
+  </div>
+  <div class="alert alert-info">
+    <p>You may register using your Google account!</p>
+  </div>
+  <button type="button" class="btn btn-lg btn-primary btn-block">Sign in</button>
+  <h1>Lighter, Secondary Text</h1>
+  <p>The small element is used to create a lighter, secondary text in any heading:</p>       
+  <h1>h1 heading <small>secondary text</small></h1>
+  <h2>h2 heading <small>secondary text</small></h2>
+  <h3>h3 heading <small>secondary text</small></h3>
+  <h4>h4 heading <small>secondary text</small></h4>
+  <h5>h5 heading <small>secondary text</small></h5>
+  <h6>h6 heading <small>secondary text</small></h6>
+  <section>use <kbd>Ctrl + Z</kbd> to undo an action.</section>
+  <section>use <code>&lt;!DOCTYPE html&gt;</code> to start a html page.</section>
+  <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;&lt;title/&gt;
+	&lt;head/&gt;
+	
+	&lt;body&gt;
+	&lt;body/&gt;
+  &lt;html/&gt;</pre>
+  <section><p class="text-success">Registered successfully!</p>
+  <p class="text-danger">Couldn't access to database!</p>
+  <p class="bg-primary">This text is highlighted!</p>
+  <p class="text-right" style="font:1em B Helal;">این متن راستچین شده است</p>
+  <ol class="list-unstyled">
+    <li>Sony</li>
+	<li>Samsung</li>
+	<li>Huawei</li>
+  </ol>
+  <blockquote class="blockquote-reverse" style="font:1em B Helal;">
+	<p>قبل از عرضه موزائیک، گرافیک و متن در صفحات وب از یکدیگر جدا بودند و در پروتکل‌های اینترنتی قبلی مانند
+	 پروتکل گوفر و مرور اطلاعات ناحیه وسیع گرافیک کاربرد زیادی نداشت. واسط کاربر گرافیکی موزائیک وب را به مشهورترین پروتکل
+	اینترنتی تبدیل کرد</p>
+	<footer>ویکیپدیا، دانشنامه آزاد</footer>
+  </blockquote>
+  </section>
+  <table class="table table-striped table-bordered table-condensed">
+    <thead>
+	  <tr>
+	    <td>Name</td>
+		<td>Surname</td>
+		<td>Age</td>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td>Ali</td>
+		<td>Salavatti</td>
+		<td>16</td>
+	  </tr>
+	  <tr>
+	    <td>Mahdiyar</td>
+		<td>Alavi</td>
+		<td>16</td>
+	  </tr>
+	  <tr>
+	    <td>Amirhossein</td>
+		<td>Zabihi</td>
+		<td>16</td>
+	  </tr>
+	  <tr>
+	    <td>Ehsan</td>
+		<td>Mohammadi</td>
+		<td>27</td>
+	  </tr>
+	</tbody>
+  </table>
+  <a href="https://m3a.github.io" class="thumbnail">
+	<p>m3a.github.io</p>
+	<img src="http://www.enp.eu/wp-content/uploads/Austria.jpg" class="img-circle img-thumbnail" alt="Austria" width="512" height="384">
+  </a>
+  <div class="well well-lg" style="font:1em B Helal;"><p class="text-right">چاه نکن بهر کسی، اول خودت، دوم کسی</p></div>
+  <div class="btn-group">
+    <div class="btn-group">
+	  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Iran <span class="caret"></span></button>
+	  <ul class="dropdown-menu" role="menu">
+	    <li><a href="#">Tehran</a></li>
+	    <li><a href="#">Isfahan</a></li>
+	    <li><a href="#">Shiraz</a></li>
+	    <li><a href="#">Tabriz</a></li>
+	    <li><a href="#">Mashhad</a></li>
+	    <li><a href="#">Qom</a></li>
+	  </ul>
+	</div>
+	<button type="button" class="btn btn-primary">Brazil</button>
+	<button type="button" class="btn btn-primary">Portugal</button>
+  </div>
+  <div class="btn-group">
+	<button type="button" class="btn btn-success">Lenovo</button>
+	<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	<ul class="dropdown-menu" role="menu">
+	  <li><a href="#">Smartphone</a></li>
+	  <li><a href="#">Tablet</a></li>
+	  <li><a href="#">Laptop</a></li>
+	</ul>
+  </div>
+  <br><br>
+  <!--<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://m3a.github.io"></iframe>
+  </div>-->
+  <div class="progress">
+	<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width:50%;"><span class="glyphicon glyphicon-picture"></span> Pictures</div>
+	<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" style="width:40%;"><span class="glyphicon glyphicon-film"></span> Films</div>
+	<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" style="width:10%;"><span class="glyphicon glyphicon-file"></span> APK Files</div>
+  </div>
+  <footer>
+    <ul class="pagination pagination-sm">
+	  <li class="active"><a href="#">1</a></li>
+	  <li><a href="#">2</a></li>
+	  <li><a href="#">3</a></li>
+	  <li><a href="#">4</a></li>
+	  <li class="disabled"><a>5</a></li>
+	</ul>
+	<ul class="pager" style="font:1em B Helal;">
+	  <li class="previous"><a href="#">قبلی</a></li>
+	  <li class="next"><a href="#">بعدی</a></li>
+	</ul>
+	<ul class="list-group" style="font:1em B Helal;">
+	  <a href="#" class="list-group-item active"><span class="badge" style="font:1em Tahoma;">72</span>یوونتوس</a>
+	  <a href="#" class="list-group-item"><span class="badge" style="font:1em Tahoma;">64</span>ناپولی</a>
+	  <a class="list-group-item disabled"><span class="badge" style="font:1em Tahoma;">60</span>آث میلان</a>
+	  <a href="#" class="list-group-item list-group-item-success"><span class="badge" style="font:1em Tahoma;">56</span>فیورنتینا</a>
+	  <a href="#" class="list-group-item"><span class="badge" style="font:1em Tahoma;">54</span>اینتر میلان</a>
+	  <a href="#" class="list-group-item list-group-item-warning"><span class="badge" style="font:1em Tahoma;">52</span>لاتزیو</a>
+	  <a href="#" class="list-group-item list-group-item-danger"><span class="badge" style="font:1em Tahoma;">46</span>آ اس رم</a>
+	</ul>
+  </footer>
+  <div class="panel panel-default">
+    <div class="panel-heading">Panel with panel-default class</div>
+	<div class="panel-body">Panel Content</div>
+  </div>
+  <div class="dropup">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li role="presentation" class="dropdown-header">Dropdown header 1</li>
+      <li role="presentation"><a role="menuitem" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" href="#">CSS</a></li>
+      <li role="presentation" class="disabled"><a role="menuitem">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation" class="dropdown-header">Dropdown header 2</li>
+      <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
+    </ul>
+  </div>
+  <ul class="nav nav-pills nav-stacked">
+	<li><a href="#">Home</a></li>
+	<li class="active"><a href="#">Web</a></li>
+	<li><a href="#">Graphics</a></li>
+  <ul>
+  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Some content.</p>
     </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Introduction</h3>
-        <p>
-          Welcome! Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python. Fortunately an experienced programmer in any programming language (whatever it may be) can pick up Python very quickly. It's also easy for beginners to use and learn, so jump in!
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Installing</h3>
-        <p>
-          Installing Python is generally easy, and nowadays many Linux and UNIX distributions include a recent Python. Even some Windows computers (notably those from HP) now come with Python already installed. If you do need to install Python and aren't confident about the task you can find a few notes on the BeginnersGuide/Download wiki page, but installation is unremarkable on most platforms.
-        </p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Learning</h3>
-        <p>
-          Before getting started, you may want to find out which IDEs and text editors are tailored to make Python editing easy, browse the list of introductory books, or look at code samples that you might find helpful.
-
-There is a list of tutorials suitable for experienced programmers on the BeginnersGuide/Tutorials page. There is also a list of resources in other languages which might be useful if English is not your first language.
-        </p>
-      </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Some content in menu 1.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Some content in menu 2.</p>
     </div>
   </div>
+</div>
 
 </body>
 </html>
