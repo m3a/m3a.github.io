@@ -1,118 +1,350 @@
 <!DOCTYPE html>
-<html lang="fa">
-  <head>
-    <title>آلبالو</title>
-    <meta charset="utf-8">
-	<link rel="stylesheet" href="bootstrap.min.css">
-	<link rel="stylesheet" href="bootstrap-rtl.css">
-	<script src="jquery.min.js"></script>
-	<script src="bootstrap.min.js"></script>
-	<style>
-	  #mcf{
-	    padding: 0 !important;
-	  }
-	  .navbar, .jumbotron{
-	    margin: 0 !important;
-		border-radius: 0 !important;
-	  }
-	  h1, p, .navbar-header, .navbar-nav>li>a, .dropdown-menu>li>a{
-	    font: 1em 'B Yekan';
-	  }
-	  .navbar-brand{
-	    margin-left: 0 !important;
-		color: #F00 !important;
-		background-color: #151515;
-	  }
-	  .navbar-brand:hover{
-	    background-color: #151515 !important;
-	  }
-	  .dropdown-menu>li>a{
-	    text-align: right;
-	  }
-	  #mc{
-	    margin-top: 1em;
-		font: 1em 'B Yekan';
-	  }
-	  .panel-body>p{
-	    text-align: justify;
-		text-justify: inter-word;
-	  }
-	  @font-face
-	  {
-	  	font-family: 'glyphicons halflings regular';
-	  	src: local('glyphicons halflings regular.ttf'), url('http://s6.picofile.com/d/85485b6a-f0d8-4634-a849-45cb0d4e9a8b/glyphicons_halflings_regular.ttf'), /* non-IE */
-	  	url('http://s6.picofile.com/d/b320cce5-7415-4b0a-883a-3c49a28af52c/glyphicons_halflings_regular.eot') format("opentype"); /* IE */
-	  }
-	</style>
-  </head>
-  <body>
-    <div class="container-fluid" id="mcf">
-	  <div class="navbar navbar-inverse">
-	    <div class="container-fluid">
-		  <div class="navbar-header">
-		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span> 
-			</button>
-		    <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-leaf"></span></a>
-		  </div>
-		  <div class="collapse navbar-collapse" id="myNavbar">
-		    <ul class="nav navbar-nav">
-			  <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-			  <li class="dropdown">
-			    <a class="dropdown-toggle" data-toggle="dropdown" href="#">آرشیو مطالب <span class="caret"></span></a>
-				<ul class="dropdown-menu">
-				  <li><a href="#">روش های مطالعه</a></li>
-				  <li><a href="#">هوش و ریاضی</a></li>
-				  <li><a href="#">مذهبی</a></li>
-				  <li><a href="#">مشاوره</a></li>
-				</ul>
-			  </li>
-			  <li><a href="#">تماس با ما</a></li>
-			  <li><a href="#">درباره</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-left">
-			  <li><a href="#"> ثبت نام</a></li>
-			  <li><a href="#"> ورود</a></a></li>
-			</ul>
-		  </div>
-		</div>
+<html lang="en">
+<head>
+  <title>helloworld</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <style>
+	.btn{
+	  outline: none !important;
+	}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li> 
+          <li><a href="#">Page 3</a></li> 
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <h1>helloworld</h1>
+	<p>A project to gain exprience!</p>
+  </div>
+  <div class="btn-group btn-group-justified" style="font:1em B Helal;">
+	<a href="#" class="btn btn-danger">جستجو <span class="glyphicon glyphicon-search"></span></a>
+	<a href="#" class="btn btn-warning">آیکن <span class="label label-danger">جدید</span> <span class="glyphicon glyphicon-tree-conifer"></span></a>
+	<a href="#" class="btn btn-info">فونت <span class="glyphicon glyphicon-font"></span></a>
+	<div class="btn-group">
+      <a href="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span> فایل لایه باز <span class="glyphicon glyphicon-file"></span></a>
+	  <ul class="dropdown-menu" role="menu">
+	    <li><a href="#">اسکریپت <span class="glyphicon glyphicon-list-alt"></span></a></li>
+	    <li><a href="#">منو لایه باز <span class="glyphicon glyphicon-th-list"></span></a></li>
+	    <li><a href="#">فارسی نویس <span class="badge">فا</span></a></li>
+	    <li><a href="#">وکتور طراحی وب <span class="glyphicon glyphicon-leaf"></span></a></li>
+	    <li><a href="#">آیکن های کاربردی <span class="glyphicon glyphicon-flag"></span></a></li>
+	  </ul>
+	</div>
+	<a href="#" class="btn btn-primary">ابزار گرافیک <span class="glyphicon glyphicon-th-large"></span></a>
+	<a href="#" class="btn btn-default">صفحه نخست <span class="glyphicon glyphicon-home"></span></a>
+  </div>
+  <div class="page-header">
+	<h2>helloworld <small>A project to gain exprience!</small></h2>
+  </div>
+  <div class="alert alert-danger">
+    <p>Connection to server is refused!</p>
+  </div>
+  <div class="alert alert-success fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <p>Log in was successful!</p>
+  </div>
+  <div class="alert alert-info">
+    <p>You may register using your Google account!</p>
+  </div>
+  <button type="button" class="btn btn-lg btn-primary btn-block">Sign in</button>
+  <h1>Lighter, Secondary Text</h1>
+  <p>The small element is used to create a lighter, secondary text in any heading:</p>       
+  <h1>h1 heading <small>secondary text</small></h1>
+  <h2>h2 heading <small>secondary text</small></h2>
+  <h3>h3 heading <small>secondary text</small></h3>
+  <h4>h4 heading <small>secondary text</small></h4>
+  <h5>h5 heading <small>secondary text</small></h5>
+  <h6>h6 heading <small>secondary text</small></h6>
+  <section>use <kbd>Ctrl + Z</kbd> to undo an action.</section>
+  <section>use <code>&lt;!DOCTYPE html&gt;</code> to start a html page.</section>
+  <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;&lt;title/&gt;
+	&lt;head/&gt;
+	
+	&lt;body&gt;
+	&lt;body/&gt;
+  &lt;html/&gt;</pre>
+  <section><p class="text-success">Registered successfully!</p>
+  <p class="text-danger">Couldn't access to database!</p>
+  <p class="bg-primary">This text is highlighted!</p>
+  <p class="text-right" style="font:1em B Helal;">این متن راستچین شده است</p>
+  <ol class="list-unstyled">
+    <li>Sony</li>
+	<li>Samsung</li>
+	<li>Huawei</li>
+  </ol>
+  <blockquote class="blockquote-reverse" style="font:1em B Helal;">
+	<p>قبل از عرضه موزائیک، گرافیک و متن در صفحات وب از یکدیگر جدا بودند و در پروتکل‌های اینترنتی قبلی مانند
+	 پروتکل گوفر و مرور اطلاعات ناحیه وسیع گرافیک کاربرد زیادی نداشت. واسط کاربر گرافیکی موزائیک وب را به مشهورترین پروتکل
+	اینترنتی تبدیل کرد</p>
+	<footer>ویکیپدیا، دانشنامه آزاد</footer>
+  </blockquote>
+  </section>
+  <table class="table table-striped table-bordered table-condensed">
+    <thead>
+	  <tr>
+	    <td>Name</td>
+		<td>Surname</td>
+		<td>Age</td>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td>Ali</td>
+		<td>Salavatti</td>
+		<td>16</td>
+	  </tr>
+	  <tr>
+	    <td>Mahdiyar</td>
+		<td>Alavi</td>
+		<td>16</td>
+	  </tr>
+	  <tr>
+	    <td>Amirhossein</td>
+		<td>Zabihi</td>
+		<td>16</td>
+	  </tr>
+	  <tr>
+	    <td>Ehsan</td>
+		<td>Mohammadi</td>
+		<td>27</td>
+	  </tr>
+	</tbody>
+  </table>
+  <a href="https://m3a.github.io" class="thumbnail">
+	<p>m3a.github.io</p>
+	<img src="Austria.jpg" class="img-circle img-thumbnail" alt="Austria" width="512" height="384">
+  </a>
+  <div class="well well-lg" style="font:1em B Helal;"><p class="text-right">چاه نکن بهر کسی، اول خودت، دوم کسی</p></div>
+  <div class="btn-group">
+    <div class="btn-group">
+	  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Iran <span class="caret"></span></button>
+	  <ul class="dropdown-menu" role="menu">
+	    <li><a href="#">Tehran</a></li>
+	    <li><a href="#">Isfahan</a></li>
+	    <li><a href="#">Shiraz</a></li>
+	    <li><a href="#">Tabriz</a></li>
+	    <li><a href="#">Mashhad</a></li>
+	    <li><a href="#">Qom</a></li>
+	  </ul>
+	</div>
+	<button type="button" class="btn btn-primary">Brazil</button>
+	<button type="button" class="btn btn-primary">Portugal</button>
+  </div>
+  <div class="btn-group">
+	<button type="button" class="btn btn-success">Lenovo</button>
+	<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+	<ul class="dropdown-menu" role="menu">
+	  <li><a href="#">Smartphone</a></li>
+	  <li><a href="#">Tablet</a></li>
+	  <li><a href="#">Laptop</a></li>
+	</ul>
+  </div>
+  <br><br>
+  <!--<div class="embed-responsive embed-responsive-16by9">
+	<iframe class="embed-responsive-item" src="https://m3a.github.io"></iframe>
+  </div>-->
+  <div class="progress">
+	<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width:50%;"><span class="glyphicon glyphicon-picture"></span> Pictures</div>
+	<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" style="width:40%;"><span class="glyphicon glyphicon-film"></span> Films</div>
+	<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" style="width:10%;"><span class="glyphicon glyphicon-file"></span> APK Files</div>
+  </div>
+  <footer>
+    <ul class="pagination pagination-sm">
+	  <li class="active"><a href="#">1</a></li>
+	  <li><a href="#">2</a></li>
+	  <li><a href="#">3</a></li>
+	  <li><a href="#">4</a></li>
+	  <li class="disabled"><a>5</a></li>
+	</ul>
+	<ul class="pager" style="font:1em B Helal;">
+	  <li class="previous"><a href="#">قبلی</a></li>
+	  <li class="next"><a href="#">بعدی</a></li>
+	</ul>
+	<ul class="list-group" style="font:1em B Helal;">
+	  <a href="#" class="list-group-item active"><span class="badge" style="font:1em Tahoma;">72</span>یوونتوس</a>
+	  <a href="#" class="list-group-item"><span class="badge" style="font:1em Tahoma;">64</span>ناپولی</a>
+	  <a class="list-group-item disabled"><span class="badge" style="font:1em Tahoma;">60</span>آث میلان</a>
+	  <a href="#" class="list-group-item list-group-item-success"><span class="badge" style="font:1em Tahoma;">56</span>فیورنتینا</a>
+	  <a href="#" class="list-group-item"><span class="badge" style="font:1em Tahoma;">54</span>اینتر میلان</a>
+	  <a href="#" class="list-group-item list-group-item-warning"><span class="badge" style="font:1em Tahoma;">52</span>لاتزیو</a>
+	  <a href="#" class="list-group-item list-group-item-danger"><span class="badge" style="font:1em Tahoma;">46</span>آ اس رم</a>
+	</ul>
+  </footer>
+  <div class="panel panel-default">
+    <div class="panel-heading">Panel with panel-default class</div>
+	<div class="panel-body">Panel Content</div>
+  </div>
+  <div class="dropup">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li role="presentation" class="dropdown-header">Dropdown header 1</li>
+      <li role="presentation"><a role="menuitem" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" href="#">CSS</a></li>
+      <li role="presentation" class="disabled"><a role="menuitem">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation" class="dropdown-header">Dropdown header 2</li>
+      <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
+    </ul>
+  </div>
+  <ul class="nav nav-pills nav-stacked">
+	<li><a href="#">Home</a></li>
+	<li class="active"><a href="#">Web</a></li>
+	<li><a href="#">Graphics</a></li>
+  <ul>
+  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Some content.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Some content in menu 1.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Some content in menu 2.</p>
+    </div>
+  </div>
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+	  <label class="control-label col-sm-2" for="name">Name:</label>
+	  <div class="col-sm-10">
+	    <p class="form-control-static">M3A</p>
 	  </div>
-      <div class="jumbotron">
-	    <div>
-		  <h1>آلبالو</h1>
-	      <p>پروژه ای برای کسب تجربه!</p>
-		</div>
+	</div>
+	<div class="form-group">
+	  <label class="control-label col-sm-2" for="email">Email:</label>
+	  <div class="col-sm-10">
+	    <p class="form-control-static">m3a@me.com</p>
 	  </div>
-	  <div class="container-fluid" id="mc">
-	    <div class="panel-group">
-		  <div class="panel panel-default">
-		    <div class="panel-heading">ضریب هوشی (IQ)</div>
-			<div class="panel-body">
-			  <p>&nbsp;&nbsp;&nbsp;&nbsp;
-			  ضریب هوشی IQ یک نسبت است که از تقسیم سن عقلی بر سن تقویمی ضربدر 100 بدست می آید. اگر سن عقلی با سن تقویمی یکسان باشد، ضریب هوشی 100 می شود ولی در بعضی مواقع در بعضی افراد سن عقلی بیشتر می شود که این فرد هوشی بیشتر از سایر افراد دارد. 
-
-برای بدست آوردن سن عقلی راه های زیادی وجود دارد و معمولا کارشناسان از تست های خاصی استفاده می کنند. به گفته متخصصان کسانی که بهره هوشی شان بین 85 تا 114 است، هوششان در حد متوسط است که افراد باهوش متوسط 70% جمعیت جهان را تشکیل می دهند. 
-
-اگر بهره هوشی بین 115 تا 129 باشد به آنها افراد باهوش گفته می شود و اگر بین 130 تا 144 باشد تیزهوش و افرادی که ضریب هوشی بالاتر از 145 دارند جزء افراد نابغه به حساب می آیند. درباره باهوش ترین فرد در تاریخ نظرات متفاوتی وجود دارد ولی اکثر دانشمندان و کارشناسان، (لئوناردو داوینچی) را بزرگ نابغه جهان می دانند. 
-
-البته بالاترین ضریب هوشی که تا به امروز ثبت شده 298 است که مربوط به یک نوجوان امریکایی است. ضریب هوشی (گالیله) نیز 180 و ضریب هوشی (بیل گیتس) که موسس و بنیانگذار شرکت نرم افزاری مایکروسافت است را 160 تخمین می زنند. جالب است بدانید کشور ایران از لحاظ رتبه بندی ضریب هوشی در بین کشورهای جهان، رتبه 57 را دارد که این رتبه در کتاب (ضریب هوشی و ثروت ملل) نوشته پروفسور (ریچارد لین) که در سال 2002 منتشر شده است ثبت شده است.
-			  </p>
-			</div>
-		  </div>
-		  <div class="panel panel-default">
-		    <div class="panel-heading">تغذیه در ماه مبارک رمضان</div>
-			<div class="panel-body">
-			  <p>&nbsp;&nbsp;&nbsp;&nbsp;
-			  در ماه مبارک رمضان زمان غذا خوردن اصلی سه مرحلة سحر، افطار و شام می باشد که لازم است کاملاً از هم مجزا باشند. دو زمان سحر و افطار تقریباً مشخص شده است. در سحر لازم است که طوری برنامه ریزی شود که علاوه بر زمان کافی برای ذکر و دعا و عبادت زمان کافی برای غذا خوردن در نظر گرفته شده باشد. یکی از موارد اشتباه غذایی در این مرحله تسریع در غذا خوردن در وقت سحر است که اثرش بعد از چند روز روزه گرفتن در سیستم گوارش خواهد بود مثل سنگینی معده، عدم مراحل هضم طبیعی غذا در طول روز، ترشی معده و در ادامه به ناراحتی های معده و روده دچار خواهند شد.
- 
-نکته دیگر در مورد تغذیه در ماه رمضان این است که باید به زمان صرف افطار و شام توجه داشت.نبایستی بدون درنظر داشتن حجم غذای خورده شده در افطار وارد مرحله شام خوردن شد. صرف افطار می بایست در اولین فرصت ممکن صورت گیرد تا تداخلی با زمان شام خوردن پیش نیاید.فاصله زمانی افطار و شام باید آنقدر باشد که در موقع صرف شام غذای هضم نشده در معده نباشد. زمان شام خوردن هم باید طوری برنامه ریزی شود که تا قبل از خواب زمان کافی برای هضم وجود داشته باشد و نباید با شکم پر به رختخواب رفت.
-			  </p>
-			</div>
-		  </div>
+	</div>
+	<div class="form-group has-error has-feedback">
+	  <label class="control-label col-sm-2" for="pwd">Password:</label>
+	  <div class="col-sm-10">
+	    <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
+		<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+		<span class="help-block">Enter password to continue.</span>
+	  </div>
+	</div>
+	<div class="form-group">
+	  <div class="col-sm-offset-2 col-sm-10">
+	    <div class="checkbox">
+		  <label><input type="checkbox"> Remember Me!</label>
 		</div>
 	  </div>
 	</div>
-  </body>
+	<div class="form-group">
+	  <div class="col-sm-offset-2 col-sm-10">
+	    <button type="submit" class="btn btn-success">Submit</button>
+	  </div>
+	</div>
+  </form>
+  <div id="myCarousel" class="carousel slide" style="width: 28em;" data-ride="carousel">
+	<ol class="carousel-indicators">
+	  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	  <li data-target="#myCarousel" data-slide-to="1"></li>
+	  <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+	</ol>
+	<div class="carousel-inner" role="listbox">
+	  <div class="item active">
+	    <img src="http://s3.picofile.com/file/8194694318/Austria.jpg" alt="Austria">
+		<div class="carousel-caption">
+          <h3>Austria</h3>
+        </div>
+	  </div>
+	  <div class="item">
+	    <img src="http://s3.picofile.com/file/8194694384/Rio.jpg" alt="Rio">
+		<div class="carousel-caption">
+          <h3>Rio</h3>
+        </div>
+	  </div>
+	  <div class="item">
+	    <img src="http://s3.picofile.com/file/8194694334/Iran.jpg" alt="Iran">
+		<div class="carousel-caption">
+          <h3>Iran</h3>
+        </div>
+	  </div>
+	  <div class="item">
+	    <img src="http://s3.picofile.com/file/8194695200/Moscow.jpg" alt="Moscow">
+		<div class="carousel-caption">
+          <h3>Moscow</h3>
+        </div>
+	  </div>
+	</div>
+	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <br>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
