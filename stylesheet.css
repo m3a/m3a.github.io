@@ -1,0 +1,109 @@
+body{
+	margin: 0;
+	direction: rtl;
+}
+.navbar{
+	height: 45px;
+	background-color: #111;
+}
+.menu-list{
+	height: 45px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu-list>li{
+	height: 45px;
+	padding: 10px 15px 10px 15px;
+	float: right;
+}
+.menu-list>li>span,.menu-list>li>a,.dropdown-menu>li>a{
+	color: #DDD;
+	text-decoration: none;
+	font: 16px 'B Traffic';
+}
+.menu-list>li>span:hover,.menu-list>li>a:hover,.dropdown-menu>li>a:hover{
+	color: #FFF;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.down-arrow{
+	color: #DDD;
+	font-size: 10px;
+}
+.brand{
+	float: right;
+	padding: 4px 15px 4px 15px;
+}
+.brand-name{
+	float: left;
+	padding-right: 4px;
+}
+.brand-name>a{
+	font: 18px 'B Helal';
+	color: #8AF;
+	text-decoration: none;
+}
+.brand-logo{
+	background-color: #8AF;
+	background-image: url("img/board.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70% 70%;
+	float: right;
+	width: 37px;
+	height: 37px;
+	border-radius: 19px;
+}
+.dropdown-menu{
+	list-style: none;
+	padding: 0;
+	display: none;
+	background-color: #141414;
+	border-top: 1px solid #252525;
+	margin: 0;
+}
+.dropdown-menu-btn{
+	width: 47px;
+	height: 35px;
+	border: 1px solid #222;
+	float: left;
+	margin: 5px;
+	display: none;
+	outline: none;
+	background-color: #222;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #8AF;
+	font: 20px 'Tahoma';
+}
+.dropdown-menu>li{
+	padding-right: 8%;
+}
+.dropdown-menu>li:not(:first-child){
+	border-top: 1px solid #252525;
+}
+.dropdown-menu>li:not(:last-child){
+	border-bottom: 1px solid #030303;
+}
+/*--------------------------------------------------------*/
+@media (max-width: 700px) {
+	.menu-list{
+		display: none;
+	}
+	.dropdown-menu-btn{
+		display: block;
+	}
+	.navbar{
+		border-bottom: 1px solid #000;
+	}
+}
+@media (min-width: 700px) {
+	.dropdown-menu{
+		display: none !important;
+	}
+}
