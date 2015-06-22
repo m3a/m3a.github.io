@@ -170,11 +170,11 @@ body{
 	background-size: 95% 95%;
 }
 .student{
-	background-image: url("http://s3.picofile.com/d/50ad5b09-9c93-4394-89b5-caa731127583/student.svg");
+	background-image: url("student.svg");
 	background-size: 120% 120%;
 }
 .consultor{
-	background-image: url("http://s3.picofile.com/d/aa255726-8a5d-4ada-a109-7a0e83b1b8a1/chat.svg");
+	background-image: url("chat.svg");
 	background-size: 105% 105%;
 }
 .slide-bottom>div{
