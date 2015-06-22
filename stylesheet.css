@@ -6,6 +6,18 @@ body{
 	height: 45px;
 	background-color: #111;
 }
+.btn{
+	border: none;
+	font: 16px "B Yekan";
+	background-color: #8AF;
+	color: #FFF;
+	text-shadow: 0 0 3px #111;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0 3px 0 0 #79E;
+}
 .menu-list{
 	height: 45px;
 	list-style: none;
@@ -21,6 +33,7 @@ body{
 	color: #DDD;
 	text-decoration: none;
 	font: 16px 'B Traffic';
+	cursor: pointer;
 }
 .menu-list>li>span:hover,.menu-list>li>a:hover,.dropdown-menu>li>a:hover{
 	color: #FFF;
@@ -37,7 +50,7 @@ body{
 }
 .brand{
 	float: right;
-	padding: 4px 15px 4px 15px;
+	padding: 4px 15px 0 15px;
 }
 .brand-name{
 	float: left;
@@ -50,7 +63,7 @@ body{
 }
 .brand-logo{
 	background-color: #8AF;
-	background-image: url("http://s3.picofile.com/file/8195115742/board.png");
+	background-image: url("img/board.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 70% 70%;
@@ -79,8 +92,7 @@ body{
 	border-radius: 5px;
 	cursor: pointer;
 	color: #8AF;
-	font-family: Segoe UI Symbol, Symbola;
-	font-size: 20px;
+	font: 20px 'Tahoma';
 }
 .dropdown-menu>li{
 	padding-right: 8%;
@@ -91,8 +103,86 @@ body{
 .dropdown-menu>li:not(:last-child){
 	border-bottom: 1px solid #030303;
 }
+.slide{
+	background-color: #222;
+	background-image: url("img/blackboard.jpg");
+	background-size: contain;
+	padding: 50px 0 85px 0;
+}
+.slide-center-txt{
+	color: #FFF;
+	text-shadow: 0 0 5px #000;
+	font-family: 'B Yekan';
+	text-align: center;
+}
+.slide-center-txt>div:first-child{
+	font-size: 60px;
+}
+.slide-center-txt>div:nth-child(2){
+	font-size: 20px;
+}
+.description{
+	text-align: justify;
+	text-justify: inter-word;
+	width: 50%;
+	margin: auto;
+}
+.slide-btn{
+	margin: 0 auto;
+}
+.slide-bottom{
+	height: 50px;
+	background-color: #EEE;
+	background-image: url("img/pattern.png");
+	padding: 25px 1% 25px 1%;
+}
+.slide-bottom-item{
+	height: inherit;
+	float: right;
+	opacity: .9;
+	cursor: pointer;
+}
+.slide-bottom-item:hover{
+	opacity: 1;
+}
+.item-img-box{
+	float: right;
+	width: 50px;
+	height: 50px;
+}
+.item-img{
+	width: 40px;
+	height: 40px;
+	border-radius: 25px;
+	background: #DDD;
+	background-position: center;
+	padding: 5px;
+}
+.item-txt{
+	height: 18px;
+	float: left;
+	font: 14px 'B Traffic';
+	color: #111;
+	padding: 16px 5px;
+}
+.old-board{
+	background-image: url("img/old-board.png");
+	background-size: 95% 95%;
+}
+.student{
+	background-image: url("img/student.svg");
+	background-size: 120% 120%;
+}
+.consultor{
+	background-image: url("img/chat.svg");
+	background-size: 105% 105%;
+}
+.slide-bottom>div{
+	width: 33.333%;
+	float: right;
+}
 /*--------------------------------------------------------*/
-@media (max-width: 700px) {
+@media (max-width: 720px) {
 	.menu-list{
 		display: none;
 	}
@@ -102,9 +192,20 @@ body{
 	.navbar{
 		border-bottom: 1px solid #000;
 	}
+	.slide{
+		display: none;
+	}
+	.slide-bottom{
+		display: none;
+	}
 }
-@media (min-width: 700px) {
+@media (min-width: 720px) {
 	.dropdown-menu{
 		display: none !important;
+	}
+}
+@media (max-width: 1050px) {
+	.item-img-box{
+		display: none;
 	}
 }
