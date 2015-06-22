@@ -79,6 +79,7 @@ body{
 	border-radius: 5px;
 	cursor: pointer;
 	color: #8AF;
+	font-family: Segoe UI Symbol, Symbola;
 	font-size: 20px;
 }
 .dropdown-menu>li{
