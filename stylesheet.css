@@ -79,7 +79,7 @@ body{
 	border-radius: 5px;
 	cursor: pointer;
 	color: #8AF;
-	font: 20px 'Tahoma';
+	font-size: 20px;
 }
 .dropdown-menu>li{
 	padding-right: 8%;
