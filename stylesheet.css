@@ -63,7 +63,7 @@ body{
 }
 .brand-logo{
 	background-color: #8AF;
-	background-image: url("img/board.png");
+	background-image: url("http://s3.picofile.com/file/8195115742/board.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 70% 70%;
@@ -105,7 +105,7 @@ body{
 }
 .slide{
 	background-color: #222;
-	background-image: url("img/blackboard.jpg");
+	background-image: url("http://s3.picofile.com/file/8195176168/blackboard.jpg");
 	background-size: contain;
 	padding: 50px 0 85px 0;
 }
@@ -133,7 +133,7 @@ body{
 .slide-bottom{
 	height: 50px;
 	background-color: #EEE;
-	background-image: url("img/pattern.png");
+	background-image: url("http://s6.picofile.com/file/8195176334/pattern.png");
 	padding: 25px 1% 25px 1%;
 }
 .slide-bottom-item{
@@ -166,15 +166,15 @@ body{
 	padding: 16px 5px;
 }
 .old-board{
-	background-image: url("img/old-board.png");
+	background-image: url("http://s3.picofile.com/file/8195176226/old_board.png");
 	background-size: 95% 95%;
 }
 .student{
-	background-image: url("img/student.svg");
+	background-image: url("http://s3.picofile.com/d/50ad5b09-9c93-4394-89b5-caa731127583/student.svg");
 	background-size: 120% 120%;
 }
 .consultor{
-	background-image: url("img/chat.svg");
+	background-image: url("http://s3.picofile.com/d/aa255726-8a5d-4ada-a109-7a0e83b1b8a1/chat.svg");
 	background-size: 105% 105%;
 }
 .slide-bottom>div{
