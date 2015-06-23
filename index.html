@@ -4,9 +4,10 @@
 		<title>تخته سیاه | سامانه برگزاری آزمون چندگزینه ای آنلاین</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="stylesheet.css">
-		<script src="jquery.min.js"></script>
-		<script src="javascript.js"></script>
+		<link rel="shortcut icon" href="css/img/black.ico">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<script src="javascript/jquery.js"></script>
+		<script src="javascript/javascript.js"></script>
 	</head>
 	<body>
 		<div class="navbar">
@@ -22,10 +23,46 @@
 				<li><a href="">برگزاری آزمون</a></li>
 			</ul>
 			<ul class="menu-list left">
-				<li><span>ورود</span></li>
+				<li><span class="sign-in">ورود</span></li>
 				<li><a href="">ثبت نام</a></li>
 			</ul>
 			<button type="button" class="dropdown-menu-btn">&#9776;</button>
+		</div>
+		<div class="opaque-layer"></div>
+		<div class="modal sign-in-modal">
+			<div class="close-box">
+				<div class="close-tooltip"><div class="left-arrow"></div>بستن این پنجره</div>
+				<span class="close">&times;</span>
+			</div>
+			<form action="#" method="post">
+				<div class="sign-in-form-header">ورود به سامانه تخته سیاه</div>
+				<div class="sign-in-form-item">
+					<div class="label">نام کاربری</div>
+					<input class="txt-type-input" type="text" name="username" id="username" placeholder="نام کاربری خود را وارد کنید">
+				</div>
+				<div class="sign-in-form-item">
+					<div class="label">گذر واژه</div>
+					<input class="txt-type-input" type="password" name="password" id="password" placeholder="گذر واژه خود را وارد کنید">
+				</div>
+				<div class="sign-in-form-item checkbox-item">
+					<div class="space-div remember-me-box">
+						<div class="remember-me-container">
+							<input type="checkbox" name="remember-me">
+						</div>
+						<div class="remember-me-txt">من را به خاطر بسپار</div>
+					</div>
+				</div>
+				<div class="sign-in-form-item">
+					<div class="space-div">
+						<button type="submit" name="submit" class="btn sign-in-btn">ورود به حساب کاربری</button>
+					</div>
+				</div>
+				<div class="sign-in-form-item forgotten-password-item">
+					<div class="space-div forgotten-password-box">
+						<a class="forgotten-password" href="">اطلاعات کاربری خود را به یاد ندارم</a>
+					</div>
+				</div>
+			</form>
 		</div>
 		<ul class="dropdown-menu">
 			<li><a href="">خانه</a></li>
@@ -33,7 +70,7 @@
 			<li><a href="">درباره</a></li>
 			<li><a href="">آرشیو مطالب</a></li>
 			<li><a href="">برگزاری آزمون</a></li>
-			<li><a href="">ورود</a></li>
+			<li><a href="sign-in.html">ورود</a></li>
 			<li><a href="">ثبت نام</a></li>
 		</ul>
 		<div class="slide">
@@ -41,36 +78,41 @@
 				<div>تخته سیاه</div>
 				<div>سامانه برگزاری آزمون چندگزینه ای آنلاین</div>
 				<div class="description">
-					<p>&nbsp;&nbsp;&nbsp;&nbsp;لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیستری را برای طراحان رایانه ای و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;
+						تخته سیاه سامانه ای با قابلیت هایی فراوان نظیر برگزاری آزمون های چندگزینه ای آنلاین، انتشار مطالب مفید و کاربردی برای دانش آموزان
+						و غیره است. دبیر های محترم می توانند با داشتن کد دبیر در این سامانه ثبت نام کرده و بصورت رایگان برای دانش آموزان خود آزمون چندگزینه ای
+						طرح کنند تا باعث یادگیری بهتر آن ها شوند. دانش آموزان نیز از این فرصت برخوردارند که با شرکت در آزمون های گوناگون برای آزمون های واقعی آماده
+						شوند. از مشاورین مدارس نیز درخواست می شود تا با ثبت نام در تخته سیاه، به صورت رایگان به دانش آموزان مشاوره دهند و با نوشتن مطالب مفید
+						آنان را در مسایل مختلف یاری دهند. هدف از توسعه تخته سیاه همواره پیشرفت علمی دانش آموزان و موفقیت آن ها بوده است. برای آگاهی یافتن بیشتر
+						روی دکمه زیر کلیک کنید.
+					</p>
 				</div>
 				<button type="button" onclick="window.location.href=''" class="btn slide-btn">راهنمای استفاده از تخته سیاه</button>
 			</div>
 		</div>
-		<div class="slide-bottom">
-			<div>
-				<div class="slide-bottom-item" onclick="window.location.href=''">
-					<div class="item-img-box">
-						<div class="item-img old-board"></div>
-					</div>
-					<div class="item-txt">دبیر هستید؟ آزمون طرح کنید و درسنامه بنویسید!</div>
+		<div class="slide-bottom-main-container">
+		<div class="slide-bottom-container">
+		<ul class="slide-bottom">
+			<li class="slide-bottom-item" onclick="window.location.href=''">
+				<div class="item-img-box">
+					<div class="item-img old-board"></div>
 				</div>
-			</div>
-			<div>
-				<div class="slide-bottom-item" onclick="window.location.href=''">
-					<div class="item-img-box">
-						<div class="item-img student"></div>
-					</div>
-					<div class="item-txt">دانش آموز هستید؟ آزمون بدهید و آمادگی کسب کنید!</div>
+				<div class="item-txt">دبیر هستید؟ آزمون طرح کنید و درسنامه بنویسید!</div>
+			</li>
+			<li class="slide-bottom-item" onclick="window.location.href=''">
+				<div class="item-img-box">
+					<div class="item-img student"></div>
 				</div>
-			</div>
-			<div>
-				<div class="slide-bottom-item" onclick="window.location.href=''">
-					<div class="item-img-box">
-						<div class="item-img consultor"></div>
-					</div>
-					<div class="item-txt">مشاور هستید؟ به دانش آموزان مشاوره دهید!</div>
+				<div class="item-txt">دانش آموز هستید؟ آزمون بدهید و آمادگی کسب کنید!</div>
+			</li>
+			<li class="slide-bottom-item" onclick="window.location.href=''">
+				<div class="item-img-box">
+					<div class="item-img consultor"></div>
 				</div>
-			</div>
+				<div class="item-txt">مشاور هستید؟ مشاوره بنویسید و دانش آموزان را یاری دهید!</div>
+			</li>
+		</ul>
+		</div>
 		</div>
 	</body>
 </html>
