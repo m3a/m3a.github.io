@@ -2,4 +2,12 @@ $(document).ready(function(){
 	$(".dropdown-menu-btn").click(function(){
 		$(".dropdown-menu").slideToggle();
 	});
+	$(".sign-in").click(function(){
+		$(".opaque-layer").fadeIn(400);
+		$(".sign-in-modal").fadeIn(800);
+	});
+	$(".close").click(function(){
+		$(".sign-in-modal").fadeOut(400);
+		$(".opaque-layer").fadeOut(800);
+	});
 });
