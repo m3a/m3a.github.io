@@ -619,8 +619,9 @@ body{
 }
 @font-face {
     font-family: 'B Traffic’;
-    src: url('http://s6.picofile.com/d/b76d3aee-f658-4ef8-9f21-206ab5257f41/B_Traffic.ttf') format('truetype'),
-    	 url('https://www.kirsle.net/wizards/ttf2eot-temp/66701fbeb10da542f9b5a32facd83ebe/B_Traffic.eot') format('eot');
+    src: url('https://www.kirsle.net/wizards/ttf2eot-temp/66701fbeb10da542f9b5a32facd83ebe/B_Traffic.eot?#') format('eot'),
+    	 url('http://s6.picofile.com/d/b76d3aee-f658-4ef8-9f21-206ab5257f41/B_Traffic.ttf') format('truetype');
+    	 
 }
 /*--------------------------------------------------------*/
 @media (max-width: 680px) {
