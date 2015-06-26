@@ -4,7 +4,7 @@
 		<title>تخته سیاه | سامانه برگزاری آزمون چندگزینه ای آنلاین</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="http://s6.picofile.com/d/7683981c-5a3d-491a-9835-6647f975389e/black.ico">
+		<link rel="shortcut icon" href="http://s6.picofile.com/d/f5752a15-b785-4d8d-8801-6723eb1a309d/black.ico">
 		<link rel="stylesheet" href="stylesheet.css">
 		<script src="jquery.min.js"></script>
 		<script src="javascript.js"></script>
@@ -26,7 +26,7 @@
 				<li><span class="sign-in">ورود</span></li>
 				<li><a href="">ثبت نام</a></li>
 			</ul>
-			<button type="button" class="dropdown-menu-btn">&#9776;</button>
+			<button type="button" class="dropdown-menu-btn"><div></div></button>
 		</div>
 		<div class="opaque-layer"></div>
 		<div class="modal sign-in-modal">
@@ -37,11 +37,11 @@
 			<form action="#" method="post">
 				<div class="sign-in-form-header">ورود به سامانه تخته سیاه</div>
 				<div class="sign-in-form-item">
-					<div class="label">نام کاربری</div>
+					<div class="label" for="username">نام کاربری</div>
 					<input class="txt-type-input" type="text" name="username" id="username" placeholder="نام کاربری خود را وارد کنید">
 				</div>
 				<div class="sign-in-form-item">
-					<div class="label">گذر واژه</div>
+					<div class="label" for="password">گذر واژه</div>
 					<input class="txt-type-input" type="password" name="password" id="password" placeholder="گذر واژه خود را وارد کنید">
 				</div>
 				<div class="sign-in-form-item checkbox-item">
@@ -91,28 +91,118 @@
 			</div>
 		</div>
 		<div class="slide-bottom-main-container">
-		<div class="slide-bottom-container">
-		<ul class="slide-bottom">
-			<li class="slide-bottom-item" onclick="window.location.href=''">
-				<div class="item-img-box">
-					<div class="item-img old-board"></div>
-				</div>
-				<div class="item-txt">دبیر هستید؟ آزمون طرح کنید و درسنامه بنویسید!</div>
-			</li>
-			<li class="slide-bottom-item" onclick="window.location.href=''">
-				<div class="item-img-box">
-					<div class="item-img student"></div>
-				</div>
-				<div class="item-txt">دانش آموز هستید؟ آزمون بدهید و آمادگی کسب کنید!</div>
-			</li>
-			<li class="slide-bottom-item" onclick="window.location.href=''">
-				<div class="item-img-box">
-					<div class="item-img consultor"></div>
-				</div>
-				<div class="item-txt">مشاور هستید؟ مشاوره بنویسید و دانش آموزان را یاری دهید!</div>
-			</li>
-		</ul>
+			<div class="slide-bottom-container">
+				<ul class="slide-bottom">
+					<li class="slide-bottom-item" onclick="window.location.href=''">
+						<div class="item-img-box">
+							<div class="item-img old-board"></div>
+						</div>
+						<div class="item-txt">دبیر هستید؟ آزمون طرح کنید و درسنامه بنویسید!</div>
+					</li>
+					<li class="slide-bottom-item" onclick="window.location.href=''">
+						<div class="item-img-box">
+							<div class="item-img student"></div>
+						</div>
+						<div class="item-txt">دانش آموز هستید؟ آزمون بدهید و آمادگی کسب کنید!</div>
+					</li>	
+					<li class="slide-bottom-item" onclick="window.location.href=''">
+						<div class="item-img-box">
+							<div class="item-img consultor"></div>
+						</div>
+						<div class="item-txt">مشاور هستید؟ مشاوره بنویسید و دانش آموزان را یاری دهید!</div>
+					</li>
+				</ul>
+			</div>
 		</div>
+		<div class="page-main-container">
+			<div class="links-container">
+				<div class="search-box">
+					<div class="search-txt-box">
+						<div class="search-txt-icn"></div>
+						<div class="search-txt">برای مقاله یا درسنامه جستجو کنید</div>
+					</div>
+					<div class="search-input-box">
+						<div class="search-input-close">
+							<div class="close-tooltip"><div class="left-arrow"></div>انصراف</div>
+							<div>&times;</div>
+						</div>
+						<form action="" method="get">
+							<input type="text" class="txt-type-input search-input" name="search" placeholder="عبارتی برای جستجو وارد کنید">
+							<div class="search-txt-icn-container">
+								<button type="submit" class="search-txt-icn"></button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="links-box">
+					<div class="links-box-header">آرشیو مقاله ها</div>
+					<ul class="links-list">
+						<li><a title="" href="">روش های مطالعه صحیح</a></li>
+						<li><a title="" href="">کنترل استرس شب امتحان</a></li>
+						<li><a title="" href="">بررسی علل نفهمیدن درس</a></li>
+						<li><a title="" href="">کلید طلایی در مطالعه</a></li>
+						<li><a title="" href="">روش های مطالعه در مکان شلوغ</a></li>
+					</ul>
+					<div class="links-box-header">آرشیو درسنامه ها</div>
+					<ul class="links-list">
+						<li><a title="" href="">فیزیک - دینامیک</a></li>
+						<li><a title="" href="">فیزیک - سینماتیک</a></li>
+						<li><a title="" href="">شیمی - استوکیومتری</a></li>
+						<li><a title="" href="">فیزیک - نور و آینه</a></li>
+						<li><a title="" href="">حسابان - مفهوم حد</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="articles-container">
+				<div class="article">
+					<div class="article-header">
+						<div class="article-title">روش های مطالعه صحیح</div>
+						<div class="article-header-bottom">
+							<div class="article-commit-date">1394/6/21</div>
+							<div class="article-owner-box">
+								<div class="article-owner-txt">مولف:</div>
+								<div class="article-owner-name">
+									<a href="">m3a</a>
+								</div>
+							</div>
+							<div class="article-comments-quantity-box" onclick="window.location.href=''">
+								<div class="article-comments-quantity">3</div>
+								<div class="article-comments-quantity-icn"></div>
+								<div class="close-tooltip"><div class="right-arrow"></div>نظرات کاربران</div>
+							</div>
+						</div>
+					</div>
+					<div class="article-body">
+						<div class="article-img">
+							<center><img title="روش های مطالعه صحیح" src="http://s6.picofile.com/file/8195909926/img_1.jpg" width="100%"></center>
+						</div>
+						<div class="article-txt">
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;
+								شاید به افرادی برخورده باشید که می‌گویند: همه کتابها و جزوه‌ها را می‌خوانم، اما موقع امتحان آنها را فراموش می‌کنم، یا من استعد
+								اد درس خواندن را ندارم، چون با اینکه همه مطالب را می‌خوانم اما همیشه نمراتم پایین است و یا ... . بسیاری از اینگونه مشک
+								لات به نداشتن یک روش صحیح برای مطالعه باز می‌گردد. عده‌ای فقط به حفظ کردن مطالب اکتفا می‌کنند، بطوری که یادگیری 
+								معنا و مفاهیم را از نظر دور می‌دارند. این امر موجب فراموش شدن مطالب بعد از مدتی می‌شود، در واقع آنچه 
+								اهمیت دارد یادگیری معنا و مفهوم است، چیزی که نمی‌توانیم و نباید از آن دور باشیم.
+							</p>
+						</div>
+					</div>
+					<div class="article-footer">
+						<div class="likes-container">
+							<div class="likes-box">
+								<div class="likes-quantity">29</div>
+								<div class="like-sign"></div>
+								<div class="close-tooltip"><div class="right-arrow"></div>میزان محبوبیت</div>
+							</div>
+						</div>
+						<div class="more-info-btn-container">
+							<button type="button" class="btn" onclick="window.location.href=''">ادامه مطلب</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<a style="color:#8AF;" href="http://m3a.github.io">m3a</a> &copy; 2015 All rights reserved
 		</div>
 	</body>
 </html>
