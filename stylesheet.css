@@ -617,6 +617,10 @@ body{
 .heart-active{
 	background-image: url("heart-active.svg");
 }
+@font-face {
+    font-family: 'B Traffic’;
+    src: url('fonts/B_Traffic.ttf') format('truetype'); 
+}
 /*--------------------------------------------------------*/
 @media (max-width: 680px) {
 	.links-container{
