@@ -619,7 +619,7 @@ body{
 }
 @font-face {
     font-family: 'B Traffic’;
-    src: url('fonts/B_Traffic.ttf') format('truetype'); 
+    src: url('http://s6.picofile.com/d/b76d3aee-f658-4ef8-9f21-206ab5257f41/B_Traffic.ttf') format('truetype'); 
 }
 /*--------------------------------------------------------*/
 @media (max-width: 680px) {
