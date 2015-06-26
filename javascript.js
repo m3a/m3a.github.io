@@ -27,4 +27,6 @@ $(document).ready(function(){
 		$(".likes-quantity").text(parseInt($(".likes-quantity").text()) + x);
 		$(".like-sign").toggleClass("heart-active");
 	});
+	if(jQuery.browser.mobile)
+		$(".close-tooltip").hide();
 });
