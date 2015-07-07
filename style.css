@@ -1,0 +1,258 @@
+body{
+	margin: 0;
+	padding: 0;
+	direction: rtl;
+	font: 1rem "Droid Arabic Kufi";
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+input{
+	font: 0.75rem "Tahoma";
+}
+input:focus{
+	outline: none;
+	border-color: #F90535 !important;
+}
+button{
+	border: none;
+	font-family: "Droid Arabic Kufi";
+	cursor: pointer;
+}
+button:focus{
+	outline: none;
+	cursor: default;
+}
+.header, .header-top-bar, .header-menu, .header-brand, .menu, .menu>li, .search-box-input-close, .search-box-input>form>input, .first-view{
+	float: right;
+}
+.header{
+	width: 100%;
+}
+.header-top-bar{
+	height: 10px;
+	background-image: 
+    repeating-linear-gradient(
+      -45deg,
+      #FC0,
+      #FC0 10px,
+      #FD7 10px,
+      #FD7 20px /* determines size */
+    );
+	width: inherit;
+}
+.header-menu{
+	height: 75px;
+	width: inherit;
+	border-bottom: 1px solid #CCC;
+}
+.header-brand{
+	padding: 16px 24px;
+	height: 18px;
+	font-size: 1.25rem;
+	color: #F90535;
+}
+.menu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: inherit;
+}
+.menu>li, .search-box-text, .search-box-input{
+	padding: 22px 0;
+	margin-left: 16px;
+	height: 31px;
+}
+.menu>li>button{
+	background-color: transparent;
+	font-size: 1rem;
+}
+.header-search-box{
+	float: left;
+	height: 33px;
+	line-height: 33px;
+}
+.search-box-text>button{
+	background-color: #2488EA;
+	cursor: pointer;
+	height: inherit;
+	padding: 0 8px;
+	color: #FFF;
+}
+.search-box-input{
+	display: none;
+}
+.search-box-input-close{
+	margin-left: 5px;
+}
+.search-box-input-close>i{
+	cursor: pointer;
+	color: #F90535;
+}
+.search-box-input>form>input{
+	height: 31px;
+	padding: 0 2px 0 0;
+	border: 1px solid #CCC;
+}
+.menu-dropdown{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.8rem;
+	background-color: #FFF;
+	border: 1px solid #EEE;
+	box-shadow: 1px 1px 3px 0 #EEE;
+	text-align: right;
+	position: relative;
+	display: none;
+}
+.menu-dropdown>li{
+	padding: 0 2px 0 4px;
+}
+.menu-dropdown>li:not(:first-child){
+	border-top: 1px solid #EEE;
+}
+.menu-mobile-view{
+	height: auto;
+	margin-top: 61px;
+	display: none;
+}
+.menu-mobile-view-text{
+	height: 30px;
+	background-color: #29DF90;
+	padding-right: 16px;
+	cursor: pointer;
+	color: #FFF;
+}
+.menu-mobile-view-list{
+	list-style: none;
+	border-bottom: 1px solid #CCC;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+.menu-mobile-view-list>li{
+	font-size: 0.8rem;
+	padding-right: 16px;
+}
+.menu-mobile-view-list>li:not(:first-child){
+	border-top: 1px solid #CCC;
+}
+.first-view{
+	height: 500px;
+	width: 100%;
+}
+.center-view{
+	text-align: center;
+	font-size: 3rem;
+	margin: 25px;
+	height: 100px;
+	color: #F90535;
+}
+.center-img{
+	height: 280px;
+	margin: 25px 225px;
+	background-image: url("http://s3.picofile.com/file/8198451018/css.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFF;
+	text-align: justify;
+	text-justify: inter-word;
+	text-shadow: 0 0 1px #000;
+	padding: 10px;
+	box-shadow: 0 0 5px #333;
+	font-size: 1.25vw;
+}
+.footer{
+	text-align: center;
+	height: 50px;
+	float: right;
+	background: #000;
+	width: 100%;
+	line-height: 50px;
+	margin-top: 31px;
+	color: #FFF;
+}
+/*----------------------------------------*/
+@media (max-width: 650px) {
+	.first-view,.footer{
+		display: none;
+	}
+}
+@media (max-width: 1130px) {
+	.menu>li, .menu>li>button{
+		font-size: 0.8rem;
+	}
+	.menu-dropdown>li{
+		font-size: 0.6rem;
+	}
+	.search-box-text>button{
+		font-size: 0.6rem;
+	}
+	.search-box-input>form>input{
+		height: 21px;
+	}
+	.menu>li, .search-box-text, .search-box-input{
+		padding: 15px 0;
+		margin-left: 8px;
+		height: 20px;
+	}
+	.search-box-text{
+		margin-top: -7.5px;
+	}
+	.search-box-input{
+		margin-top: -1.5px;
+	}
+	.search-box-input-close{
+		height: 23px;
+		line-height: 23px;
+	}
+	.header-menu{
+		height: 50px;
+	}
+	.header-brand{
+		padding: 9px 12px;
+		height: 32px;
+		font-size: 1.05rem;
+	}
+	.search-box-input>form>input{
+		font-size: 0.6rem;
+	}
+}
+@media (max-width: 872px) {
+	.search-box-input{
+		background: #EEE;
+		margin-top: 1px;
+		position: relative;
+	}
+	.search-box-input-close{
+		margin-right: 4px;
+	}
+	.search-box-input>form>input{
+		margin-left: 4px;
+	}
+}
+@media (max-width: 810px) {
+	.menu i{
+		display: none;
+	}
+}
+@media (max-width: 680px) {
+	.menu{
+		display: none;
+	}
+	.menu-mobile-view{
+		display: block;
+	}
+	.search-box-input{
+		background: transparent;
+		margin-top: 0;
+		position: static;
+	}
+}
+@media (max-width: 330px) {
+	.header-search-box{
+		display: none;
+	}
+}
