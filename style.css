@@ -140,7 +140,7 @@ button:focus{
 	border-top: 1px solid #CCC;
 }
 .first-view{
-	height: 500px;
+	height: auto;
 	width: 100%;
 }
 .center-view{
@@ -151,8 +151,9 @@ button:focus{
 	color: #F90535;
 }
 .center-img{
-	height: 280px;
-	margin: 25px 225px;
+	height: auto;
+	width: 60%;
+	margin: 25px auto;
 	background-image: url("http://s3.picofile.com/file/8198451018/css.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -162,17 +163,14 @@ button:focus{
 	text-shadow: 0 0 1px #000;
 	padding: 10px;
 	box-shadow: 0 0 5px #333;
-	font-size: 1.25vw;
 }
 .footer{
 	text-align: center;
 	height: 50px;
 	float: right;
-	background: #000;
 	width: 100%;
 	line-height: 50px;
-	margin-top: 31px;
-	color: #FFF;
+	color: #CCC;
 }
 /*----------------------------------------*/
 @media (max-width: 650px) {
